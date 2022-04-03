@@ -6,7 +6,9 @@
 ------------
 > [Subject](#subject)
 
-> [Functions](#Functions)
+> [Functions](#Allowed-Functions)
+
+> [Build](#Build)
 
 > [Commit-Rule](#commit-message-rule)
 
@@ -19,7 +21,7 @@
 > **레이 캐스팅**은 컴퓨터 그래픽스와 계산기하학의 다양한 문제를 해결하기 위해 광선과 표면의 교차검사를 사용하는 기법이다. 쉽게 말해 2차원 맵에서 3차원의 원근감을 만드는 렌더링 기술이다.  
 > 레이 트레이싱은 빛이 해당 물체의 표면에 닿은 후, 현실처럼 빛이 다시 재귀적으로 반사되어 결과물을 렌더링 하는 방식이지만, 레이 캐스팅은 해당 물체에 닿으면 일회성으로 사용되고 더 이상 연산을 수행하지 않는다.
 
-### **Functions**
+### **Allowed Functions**
 ---
 * open, close, read, write, printf, malloc, free, perror, strerror, exit
 * All functions of the math
@@ -27,6 +29,24 @@
 * All functions of the MinilibX
 * libft
 
+### **Build**
+Build
+
+	$ make 
+	$ ./cub3D map/map.cub
+	Map 파일은 바꿀 수 있으며 정해진 Map의 형식을 지켜야 한다.
+
+Remove Object Files
+
+	make clean
+
+Remove Executable File & Object Files
+
+	make fclean
+
+Rebuild
+
+	make re
 ### **Commit Message Rule**
 ---
 * `Type : 내용` 형식으로 작성할 것.
@@ -36,4 +56,4 @@
 * Refactor : 변수, 함수 이름 수정, 코드 최적화
 * Docs : 문서 파일 수정
 * Fix : Norm, bug 수정
-* etc : 기타 업무
+* Etc : 기타 업무
